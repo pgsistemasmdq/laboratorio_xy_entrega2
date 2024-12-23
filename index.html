@@ -5,26 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Reactivos</title>
     <link rel="stylesheet" href="./css/style.css">
+    
 </head>
 <body>
     <header>
         <h1>Gestión de Reactivos</h1>
         <img src="./img/logo.webp" alt="Logo Laboratorio XY">
     </header>
-    <div class="container">
-        <nav class="menu">
-            <a href="./pages/ingresar_reactivo.html">Ingresar Reactivo</a>
-            <a href="#">Actualizar Stock</a>
-            <a href="#">Reporte de Ingreso</a>
-            <a href="#">Estadísticas</a>
-         </nav>
-        <main class="principal">
-            <h2>Bienvenido al sistema de Gestión de Reactivos</h2>
-            <p>Seleccione una opción del menú para comenzar.</p>
-        </main>
-    </div>
-    <footer>
-        &copy; 2024 Laboratorio XY. Todos los derechos reservados.
-    </footer>
+    <main>
+        <h2>Seleccione una opción:</h2>
+        <div>
+            <button class="opciones" onclick="gestionarProveedores()">Gestionar Proveedores</button>
+            <button class="opciones" onclick="gestionarReactivos()">Gestionar Reactivos</button>
+            <button class="opciones" onclick="gestionarPedidos()">Gestionar Pedidos</button>
+            <button class="opciones" onclick="listarPedidosDetalle()">Ver Pedidos</button>
+            <button class="opciones" onclick="tableroResumen(sistema.pedidos)">Tablero</button>
+        </div>
+        <button class="salir" onclick="salir()">Salir</button>
+    </main>
+
+    <!-- Aca cargo las clases  -->
+    <script src="./script/main.js"></script>
+    <script src="./clases/Proveedor.js"></script>
+    <script src="./clases/Reactivo.js"></script>
+    <script src="./clases/Pedido.js"></script>
+    <script src="./script/Funciones.js"></script>
+    <script src="./script/CargaDatos.js"></script>
+    <script src="./script/Tablero.js"></script>
 </body>
 </html>
