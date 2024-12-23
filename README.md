@@ -116,4 +116,4 @@ Presenta un resumen general de la actividad del sistema.
 ## Cómo Usar
 1. Clona el repositorio en tu máquina local:
    ```bash
-   git clone https://github.com/usuario/sistema-gestion-reactivos.git
+   git clone https://github.com/pgsistemasmdq/laboratorio_xy_entrega2.git
